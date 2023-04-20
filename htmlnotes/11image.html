@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image in HTML</h2>
+    <p>HTML &lt;img&gt; tag is used to add image inside webpage/website. Nowadays website does not directly add images to a web page, as the images are linked to web pages by using the <img> tag which holds space for the image.</p>
+    <h1>syntax</h1>
+    &lt;img src="" alt="" width="" height=""&gt;<br>
+    <ol>
+    <p>The src attribute is required, and contains the path to the image you want to embed.</p>
+    <p>The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means.</p>
+    <ul>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#apng_animated_portable_network_graphics">APNG (Animated Portable Network Graphics)</a> — Good choice for lossless animation sequences (GIF is less performant)</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#avif_image">AVIF (AV1 Image File Format)</a> — Good choice for both images and animated images due to high performance.</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#gif_graphics_interchange_format">GIF (Graphics Interchange Format)</a> — Good choice for <em>simple</em> images and animations.</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#jpeg_joint_photographic_experts_group_image">JPEG (Joint Photographic Expert Group image)</a> — Good choice for lossy compression of still images (currently the most popular).</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#png_portable_network_graphics">PNG (Portable Network Graphics)</a> — Good choice for lossless compression of still images (slightly better quality than JPEG).</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#svg_scalable_vector_graphics">SVG (Scalable Vector Graphics)</a> — Vector image format. Use for images that must be drawn accurately at different sizes.</li>
+        <li><a href="/en-US/docs/Web/Media/Formats/Image_types#webp_image">WebP (Web Picture format)</a> — Excellent choice for both images and animated images</li>
+      </ul>
+<h2>Supported Image Formats</h2>
+<p>Image file formats are standardized means to organize and store digital images. An image file format may store data in an uncompressed format, a compressed format (which may be lossless or lossy), or a vector format. (Wikipedia).</p>
+<p>Each user agent supports different image formats. Here is the list of common image formats:</p>
+<tbody>
+           
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/APNG">APNG</a></td>
+        <td class="td-vcenter">Animated Portable Network Graphics</td>
+        <td class="td-vcenter">image/apng</td>
+        <td class="td-vcenter">.apng</td>
+        <td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/BMP_file_format">BMP</a></td>
+        <td class="td-vcenter">Bitmap file</td>
+         <td class="td-vcenter">image/bmp</td>
+         <td class="td-vcenter">.bmp</td>
+         <td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+             <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/GIF">GIF</a></td>
+        <td class="td-vcenter">Graphics Interchange Format</td>
+        <td class="td-vcenter">image/gif</td>
+<td class="td-vcenter">.gif</td>
+<td class="td-vcenter">Chrome, Edge, Firefox,  Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/ICO_(file_format)">ICO</a></td>
+        <td class="td-vcenter">Microsoft Icon</td>
+        <td class="td-vcenter">image/x-icon</td>
+       <td class="td-vcenter">.ico, .cur</td>
+        <td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/JPEG">JPEG</a></td>
+        <td class="td-vcenter">Joint Photographic Expert Group image</td>
+        <td class="td-vcenter">image/jpeg</td>
+<td class="td-vcenter">.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+<td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a></td>
+        <td class="td-vcenter">Portable Network Graphics</td>
+        <td class="td-vcenter">image/png</td>
+       <td class="td-vcenter">.png</td>
+       <td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a></td>
+        <td class="td-vcenter">Scalable Vector Graphics</td>
+        <td class="td-vcenter">image/svg+xml</td>
+       <td class="td-vcenter">.svg</td>
+      <td class="td-vcenter">Chrome, Edge, Firefox, Opera, Safari</td>
+    </tr>
+    <tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/TIFF">TIFF</a></td>
+        <td class="td-vcenter">Tagged Image File Format</td>
+        <td class="td-vcenter">image/tiff</td>
+<td class="td-vcenter">.tif, .tiff</td>
+<td class="td-vcenter">None built-in; add-ons required</td>
+    </tr>
+<tr>
+        <td class="td-vcenter"><a target="_blank" href="https://en.wikipedia.org/wiki/WebP">WebP</a></td>
+        <td class="td-vcenter">Web Picture format</td>
+        <td class="td-vcenter">image/webp</td>
+<td class="td-vcenter">.webp</td>
+<td class="td-vcenter">Chrome, Edge, Firefox, Opera</td><br>
+    </tr>
+
+    </tbody>
+
+    <h2>This is with alt</h2>
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" alt=""/>
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" alt="">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" alt="no image">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" width="150px" alt="no image">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" height="150px" alt="no image">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" width="150px"  height="150px" alt="no image">
+
+    <h2>This is Without alt</h2>
+   
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" width="150px">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" height="150px">
+    <img src="C:\Users\erurv\OneDrive\Desktop\download.jpeg" width="150px"
+        height="150px">
+
+        <h2>not working url with alt</h2>
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" alt="">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" alt="no image">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" width="150px"
+            alt="no image">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" height="150px"
+            alt="no image">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" width="150px"
+            height="150px" alt="no image">
+    
+        <h2>not working url without alt</h2>
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" width="150px">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" height="150px">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51DGGTjG0VL.jpgs" width="150px"
+            height="150px">
+</body>
+</html>

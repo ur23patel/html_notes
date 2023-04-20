@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Global Attributes</h1>
+    <p>Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements.</p>
+    <p>Global attributes may be specified on all HTML elements, even those not specified in the standard. That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant. For example, HTML5-compliant browsers hide content marked as <foo hidden>…</foo>, even though <foo> is not a valid HTML element.</p>
+    <p>In addition to the basic HTML global attributes, the following global attributes also exist:</p>
+    <ul>
+        <li><code>xml:lang</code> and <code>xml:base</code> — these are inherited from the XHTML specifications and deprecated, but kept for compatibility purposes.</li>
+        <li>The ARIA <a href="/en-US/docs/Web/Accessibility/ARIA/Roles"><code>role</code></a> attribute and the multiple <a href="/en-US/docs/Web/Accessibility/ARIA/Attributes"><code>aria-*</code></a> states and properties, used for ensuring accessibility.</li>
+        <li>The <a href="/en-US/docs/Web/HTML/Attributes#event_handler_attributes">event handler</a> attributes: <code>onabort</code>, <code>onautocomplete</code>, <code>onautocompleteerror</code>, <code>onblur</code>, <code>oncancel</code>, <code>oncanplay</code>, <code>oncanplaythrough</code>, <code>onchange</code>, <code>onclick</code>, <code>onclose</code>, <code>oncontextmenu</code>, <code>oncuechange</code>, <code>ondblclick</code>, <code>ondrag</code>, <code>ondragend</code>, <code>ondragenter</code>, <code>ondragleave</code>, <code>ondragover</code>, <code>ondragstart</code>, <code>ondrop</code>, <code>ondurationchange</code>, <code>onemptied</code>, <code>onended</code>, <code>onerror</code>, <code>onfocus</code>, <code>oninput</code>, <code>oninvalid</code>, <code>onkeydown</code>, <code>onkeypress</code>, <code>onkeyup</code>, <code>onload</code>, <code>onloadeddata</code>, <code>onloadedmetadata</code>, <code>onloadstart</code>, <code>onmousedown</code>, <code>onmouseenter</code>, <code>onmouseleave</code>, <code>onmousemove</code>, <code>onmouseout</code>, <code>onmouseover</code>, <code>onmouseup</code>, <code>onmousewheel</code>, <code>onpause</code>, <code>onplay</code>, <code>onplaying</code>, <code>onprogress</code>, <code>onratechange</code>, <code>onreset</code>, <code>onresize</code>, <code>onscroll</code>, <code>onseeked</code>, <code>onseeking</code>, <code>onselect</code>, <code>onshow</code>, <code>onsort</code>, <code>onstalled</code>, <code>onsubmit</code>, <code>onsuspend</code>, <code>ontimeupdate</code>, <code>ontoggle</code>, <code>onvolumechange</code>, <code>onwaiting</code>.</li>
+      </ul>
+      <h2>List of global attributes</h2>
+    <h3> accesskey </h3>
+    <p>Provides a hint for generating a keyboard shortcut for the current element. This attribute consists of a space-separated list of characters. The browser should use the first one that exists on the computer keyboard layout.</p>
+    &lt;a accesskey="k" href="http://www.google.com"&gt;Google&lt;/a&gt; <br>
+    <a accesskey="k" href="http://www.google.com">Google</a>
+    <h3> title </h3>
+    <a accesskey="k" title="alt+k" href="http://www.google.com">Google</a>
+    <h3> autocapitalize </h3>
+    <p>Controls whether and how text input is automatically capitalized as it is entered/edited by the user. It can have the following values:</p>
+    <ul>
+        <li><code>off</code> or <code>none</code>, no autocapitalization is applied (all letters default to lowercase)</li>
+        <li><code>on</code> or <code>sentences</code>, the first letter of each sentence defaults to a capital letter; all other letters default to lowercase</li>
+        <li><code>words</code>, the first letter of each word defaults to a capital letter; all other letters default to lowercase</li>
+        <li><code>characters</code>, all letters should default to uppercase</li>
+      </ul>
+    <form method="get">
+        <input type="text" autocapitalize="on" name="data" id="">
+        <input type="submit" name="" id="">
+    </form>
+    <h3> autocomplete </h3>
+    <form method="get">
+        <!-- <input type="text" autocapitalize="on" autocomplete="on" name="username" id=""> -->
+        <input type="text" autocapitalize="on" autocomplete="off" name="username" id="">
+        <input type="submit" name="" id="">
+    </form>
+    <h3> autofocus </h3>
+   <p>Indicates that an element is to be focused on page load, or as soon as the &lt;dialog&gt; it is part of is displayed. This attribute is a boolean, initially false.</p>
+
+    <form method="get">
+        <!-- <input type="text" autocapitalize="on" autocomplete="on" name="username" id=""> -->
+        <!-- <input type="text" autofocus autocapitalize="on" autocomplete="on" name="username" id=""> -->
+        <input type="text" tabindex="1" autocapitalize="on" autocomplete="on" name="username" id="">
+        <input type="submit" name="" id="">
+    </form>
+    <h3>Class</h3>
+<p>A space-separated list of the classes of the element. Classes allow CSS and JavaScript to select and access specific elements via the class selectors or functions like the method Document.getElementsByClassName().</p>
+     <p class="something"> class use for CSS and JS mostly we use it for css</p>
+    <h3>ID</h3>
+    <p id="something"> ID use for CSS and JS mostly we use it for JS ID must have unique value</p>
+    <h3>contenteditable</h3>
+    <p class="css" contenteditable="" id="js"> ID use for CSS and JS mostly we use it for JS ID must have unique value
+    </p>
+    <h3>data-*</h3>
+<p>Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts. All such custom data are available via the HTMLElement interface of the element the attribute is set on. The HTMLElement.dataset property gives access to them.</p>
+
+    <ul>
+        <li onclick="showDetails(this)" id="gitanjali" data-book-author="Rabindra Nath Tagore">
+            Gitanjali
+        </li>
+         
+        <li onclick="showDetails(this)" id="conquest_of_self" data-book-author="Mahatma Gandhi"> Conquest of Self </li>
+        
+        <li onclick="showDetails(this)" id="broken_wings" data-book-author="Sarojini Naidu">
+            Broken Wings
+        </li>
+    </ul>
+    <img class="spaceship cruiserX3" src="shipX3.png" data-ship-id="324" data-weapons="laserI laserII" data-shields="72%" data-x="414354" data-y="85160" data-z="31940"/>
+    <script>
+        function showDetails(book) {
+            var bookauthor = book.getAttribute("data-book-author");
+            alert(book.innerHTML + " is written by "
+                                    + bookauthor + ".");
+        }
+    </script>
+
+    <h3>dir</h3>
+<p>An enumerated attribute indicating the directionality of the element's text. It can have the following values:</p>
+<ul>
+    <li><code>ltr</code>, which means <em>left to right</em> and is to be used for languages that are written from the left to the right (like English);</li>
+    <li><code>rtl</code>, which means <em>right to left</em> and is to be used for languages that are written from the right to the left (like Arabic);</li>
+    <li><code>auto</code>, which lets the user agent decide. It uses a basic algorithm as it parses the characters inside the element until it finds a character with a strong directionality, then it applies that directionality to the whole element.</li>
+  </ul>
+    <input type="text" dir="ltr" name="" id="">
+    <input type="text" dir="rtl" name="" id="">
+
+    <h3>draggable</h3>
+<p>An enumerated attribute indicating whether the element can be dragged, using the Drag and Drop API. It can have the following values:</p>
+<ul>
+    <li><code>true</code>, which indicates that the element may be dragged</li>
+    <li><code>false</code>, which indicates that the element may not be dragged.</li>
+  </ul>
+
+    <img src="tagVsElement.png" alt="">
+    <img src="tagVsElement.png" draggable="false" alt="">
+
+    <h3>enterkeyhint</h3>
+<p>Hints what action label (or icon) to present for the enter key on virtual keyboards.</p>
+    <input enterkeyhint="go">
+    <p contenteditable hidden enterkeyhint="go">https://example.org</p>
+
+    <h3>spellcheck</h3>
+<p>An enumerated attribute defines whether the element may be checked for spelling errors. It may have the following values:</p>
+<ul>
+    <li>empty string or <code>true</code>, which indicates that the element should be, if possible, checked for spelling errors;</li>
+    <li><code>false</code>, which indicates that the element should not be checked for spelling errors.</li>
+  </ul>
+    <input type="text" spellcheck="false" placeholder="spellcheck=false" name="" id="">
+    <input type="text" spellcheck="true" placeholder="spellcheck=true" name="" id="">
+
+    <h3>style</h3>
+    <p>Contains CSS styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the &lt;style&gt; element have mainly the purpose of allowing for quick styling, for example for testing purposes.</p>
+    <input type="text" style="background-color: green;" spellcheck="false" placeholder="spellcheck=false" name="" id="">
+    
+    <h3>tab index</h3>
+    <p>An integer attribute indicating if the element can take input focus (is focusable), if it should participate to sequential keyboard navigation, and if so, at what position. It can take several values:</p>
+    <ul>
+        <li>a <em>negative value</em> means that the element should be focusable, but should not be reachable via sequential keyboard navigation;</li>
+        <li><code>0</code> means that the element should be focusable and reachable via sequential keyboard navigation, but its relative order is defined by the platform convention;</li>
+        <li>a <em>positive value</em> means that the element should be focusable and reachable via sequential keyboard navigation; the order in which the elements are focused is the increasing value of the <a href="#tabindex"><strong>tabindex</strong></a>. If several elements share the same tabindex, their relative order follows their relative positions in the document.</li>
+      </ul>
+    <input type="text" tabindex="2" style="background-color: green;" spellcheck="false" placeholder="spellcheck=false" name="" id="">
+    
+    <h3>translate</h3>
+    <p>An enumerated attribute that is used to specify whether an element's attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged. It can have the following values:</p>
+    <ul>
+        <li>empty string or <code>yes</code>, which indicates that the element will be translated.</li>
+        <li><code>no</code>, which indicates that the element will not be translated.</li>
+      </ul>
+    <footer>
+        <small>© 2020 <span translate="no">BrandName</span></small>
+      </footer>
+      
+</body>
+
+</html>

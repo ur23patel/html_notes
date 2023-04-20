@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Semantic elements</h1>
+    <p>These are some of the roughly 100 semantic elements available:</p>
+    <ul>
+        <li><a href="/en-US/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a></li>
+        <p>The &lt;article&gt; HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
+        <article>
+            article
+        </article>
+        <li><a href="/en-US/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a></li>
+        <p>The &lt;aside&gt; HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+        <aside>sidemenu</aside>
+        <li><a href="22details.html"><code>&lt;details&gt;</code></a></li>
+        <p>The &lt;details&gt; HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <summary> element.</p>
+        
+        <li><a href="23figcaption.html"><code>&lt;figcaption&gt;</code></a></li>
+        <p>The &lt;figcaption&gt; HTML element represents a caption or legend describing the rest of the contents of its parent <figure> element.</p>
+       
+        <li><a href="/en-US/docs/Web/HTML/Element/figure"><code>&lt;figure&gt;</code></a></li>
+        <p>The &lt;figure&gt; HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit.</p>
+            <img src="images/image1.webp" width="100px" alt="">
+            <!-- <p>figure 5.5</p> -->
+            <div>figure 5.5</div>
+            <!-- <label for="">figure 5.5</label> -->
+            <figure>
+                <img src="images/image1.webp" width="100px" alt="">
+                <figcaption>figure 5.5</figcaption>
+            </figure>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a></li>
+        <p>The &lt;footer&gt; HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.</p>
+            <footer>footer
+
+                <address>italic address</address>
+            </footer>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a></li>
+       <p>The &lt;header&gt; HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</p>
+       <header>header
+        <nav>Menu</nav>
+    </header>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a></li>
+       <p>The &lt;main&gt; HTML element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</p>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/mark"><code>&lt;mark&gt;</code></a></li>
+       <p>The &lt;mark&gt; HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</p>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a></li>
+        <p>The &lt;nav&gt; HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a></li>
+        <p>The &lt;section&gt; HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</p>
+        <section>sedcotion may contain multiple divs
+            <div>container/wrapper</div>
+            <div>container/wrapper</div>
+            <div>container/wrapper</div>
+            <div>container/wrapper</div>
+        </section>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/summary"><code>&lt;summary&gt;</code></a></li>
+        <p>The &lt;summary&gt; HTML element specifies a summary, caption, or legend for a &lt;details&gt; element's disclosure box. Clicking the &lt;summary&gt; element toggles the state of the parent &lt;details&gt; element open and closed.</p>
+        <details>
+            <summary>Test</summary>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ullam maxime quae tenetur laudantium officia,
+            sapiente blanditiis perferendis ratione, aspernatur nemo. Numquam ut iste optio minima distinctio sint
+            accusantium. Necessitatibus?
+        </details>
+
+        <li><a href="/en-US/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a></li>
+        <p>The &lt;time&gt; HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</p>
+        <p>It may represent one of the following:</p>
+        <ul>
+            <li>A time on a 24-hour clock.</li>
+            <li>A precise date in the <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" class="external" target="_blank">Gregorian calendar</a> (with optional time and timezone information).</li>
+            <li><a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string" class="external" target="_blank">A valid time duration</a>.</li>
+          </ul>
+    
+    </ul>
+
+
+
+   
+    
+   
+    
+   
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde
+        Park.</p>
+    &Hstrok;
+    <br>
+    &Jcirc;
+    
+   
+</body>
+
+</html>
